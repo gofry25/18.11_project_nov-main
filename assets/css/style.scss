@@ -1,0 +1,102 @@
+@font-face {
+    font-family: city-text;
+    src: url(/assets/font/Onest-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: city-title;
+    src: url(/assets/font/RubikMonoOne-Regular.ttf);
+}
+
+body{
+    background-image: url(../img/bg.jpg);
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+    & h2{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-size: 70px;
+        font-family: city-title;
+        color: transparent;
+        -webkit-text-stroke-color: white;
+        -webkit-text-stroke-width: 1px;
+        letter-spacing: -3px;
+    }
+    & h3{
+        font-size: 80px;
+        position: absolute;
+        font-family: city-text;
+        transform: translate(400px, -215px);
+        background: linear-gradient(86deg, #f2a680 0%, #fda254 38.5%, #fed593 61.63%, #fcd7a1 69.29%, #f1c371 80.74%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    }
+
+
+.cards{
+    height: 850px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+
+.cards-container{
+    display: block;
+}
+
+.card {
+    background-color: rgba($color: white, $alpha: 0.4);
+    font-family: city-text;
+    margin-top: 150px;
+    border: 3px solid rgba($color: rgb(186, 180, 180), $alpha: 0.7);
+    margin-left: 450px;
+    width: 900px;
+    height: 250px;
+    display: block;
+    border-radius: 20px;
+    & img{
+        
+        width: 300px;
+        height: 250px;
+        transform: translate(750px, -285px);
+        border-radius: 300px;
+    }
+    & p{
+        font-size: 20px;
+        width: 700px;
+        margin-left: 25px;
+    }
+    & h1{
+        margin-left: 15px;
+    }
+}
+
+
+.pagination{
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    & p{
+        font-family: city-text;
+        color: white;
+        font-size: 45px;
+    }
+    & button{
+        font-size: 60px;
+        width: 100px;
+        height: 50px;
+        background-color: transparent;
+        border: none;
+        color: white;
+        transform: translateY(-15px);
+    }
+
+}
