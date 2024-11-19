@@ -16,6 +16,7 @@ body{
     backdrop-filter: blur(5px);
     overflow: hidden;
     & h2{
+        margin-top: 25px;
         height: 115px;
         padding: 0;
         text-align: center;
@@ -25,16 +26,6 @@ body{
         -webkit-text-stroke-color: white;
         -webkit-text-stroke-width: 1px;
         letter-spacing: -3px;
-    }
-    & h3{
-        font-size: 80px;
-        position: absolute;
-        font-family: city-text;
-        transform: translate(400px, -215px);
-        background: linear-gradient(86deg, #f2a680 0%, #fda254 38.5%, #fed593 61.63%, #fcd7a1 69.29%, #f1c371 80.74%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
     }
     }
 
