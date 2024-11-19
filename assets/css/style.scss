@@ -38,6 +38,9 @@ body{
 .card {
     &:first-child{
         margin-top: 100px;
+        & img{
+            transform: translate(750px, -220px);
+        }
     }
     background-color: rgba($color: white, $alpha: 0.4);
     font-family: city-text;
@@ -49,7 +52,6 @@ body{
     display: block;
     border-radius: 20px;
     & img{
-        
         width: 250px;
         height: 250px;
         transform: translate(750px, -285px);

@@ -46,6 +46,9 @@ body h2 {
 .card:first-child {
   margin-top: 100px;
 }
+.card:first-child img {
+  transform: translate(750px, -220px);
+}
 .card img {
   width: 250px;
   height: 250px;
