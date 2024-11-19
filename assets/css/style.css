@@ -78,6 +78,7 @@ body h3 {
 }
 
 .pagination {
+  margin-bottom: 100px;
   align-items: center;
   gap: 10px;
   justify-content: center;
