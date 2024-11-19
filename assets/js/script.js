@@ -4,7 +4,15 @@ const cardsPerPage = 5; // Количество карточек на стран
 let currentPage = 1; // Текущая страница
 let totalCards = 0; // Общее количество карточек
 let allCards = []; // Массив для хранения всех карточек
+let loader = document.getElementById("loader")
+let loader_bg = document.getElementById("loader-bg")
 
+window.onload = function() {
+    setTimeout(function() {
+    loader.style.display = 'none'
+    loader_bg.style.display = 'none'
+}, 4000)
+}
 // Функция для получения общего количества карточек
 async function fetchTotalCards() {
     try {
