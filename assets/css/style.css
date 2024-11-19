@@ -1,11 +1,4 @@
-@font-face {
-  font-family: city-text;
-  src: url(/assets/font/Onest-VariableFont_wght.ttf);
-}
-@font-face {
-  font-family: city-title;
-  src: url(/assets/font/RubikMonoOne-Regular.ttf);
-}
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Rubik+Mono+One&display=swap");
 body {
   background-image: url(../img/bg.jpg);
   margin: 0;
@@ -22,7 +15,7 @@ body h2 {
   padding: 0;
   text-align: center;
   font-size: 70px;
-  font-family: city-title;
+  font-family: Rubik Mono One;
   color: transparent;
   -webkit-text-stroke-color: white;
   -webkit-text-stroke-width: 1px;
@@ -77,7 +70,7 @@ body h2 {
   display: flex;
 }
 .pagination p {
-  font-family: city-text;
+  font-family: Onest;
   color: white;
   font-size: 45px;
 }
