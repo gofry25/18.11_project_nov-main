@@ -16,7 +16,7 @@ body{
     backdrop-filter: blur(5px);
     overflow: hidden;
     & h2{
-        margin: 0;
+        height: 115px;
         padding: 0;
         text-align: center;
         font-size: 70px;
@@ -40,7 +40,7 @@ body{
 
 
 .cards{
-    height: 850px;
+    height: 650px;
     overflow-y: scroll;
     scrollbar-width: none;
 }
@@ -48,9 +48,13 @@ body{
 
 .cards-container{
     display: block;
+
 }
 
 .card {
+    &:first-child{
+        margin-top: 100px;
+    }
     background-color: rgba($color: white, $alpha: 0.4);
     font-family: city-text;
     margin-top: 150px;
@@ -99,4 +103,21 @@ body{
         transform: translateY(-15px);
     }
 
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    &__input{
+        width: 300px;
+        position: absolute;
+        transform: translate(700px, 50px);
+        background-color: rgba($color: #ffffff, $alpha: 0.4);
+        border: none;
+        border-radius: 30px;
+        font-size: 30px;
+        padding-left: 25px;
+        color: #000000;
+        font-weight: 100;
+    }
 }
