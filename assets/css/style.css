@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Rubik+Mono+One&display=swap");
 body {
+  width: 1920px;
+  height: 1080px;
   background-image: url(../img/bg.jpg);
   margin: 0;
   padding: 0;
@@ -95,8 +97,8 @@ body h2 {
 }
 .loader {
   position: absolute;
-  top: calc(50% - 1.25em);
-  left: calc(50% - 1.25em);
+  top: 45%;
+  left: 48.7%;
 }
 
 .cards {
