@@ -12,15 +12,40 @@ body {
   overflow: hidden;
 }
 
-.card-details {
-  height: 800px;
-  background-color: rgba(255, 255, 255, 0.4);
+.large-container {
+  height: 1200px;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.55);
   margin: 50px 135px 150px 150px;
-  padding: 50px;
+  padding: 60px;
   border-radius: 25px;
   border: 3px solid rgba(186, 180, 180, 0.7);
 }
-.card-details img {
+.container img {
   width: 450px;
   height: 250px;
+}
+
+.card-details h1 {
+  font-size: 50px;
+  text-align: center;
+  margin-top: -10px;
+}
+.card-details img {
+  margin-left: 35px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.card-details p {
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.map {
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=page.css.map */

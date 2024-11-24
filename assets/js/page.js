@@ -21,8 +21,10 @@ function displayCardDetails(card) {
     const container = document.getElementById('card-details');
     container.innerHTML = `
         <h1>${card.title}</h1>
-        <p>${card.longerDescription}</p>
         <img src="${card.image}" alt="${card.title}">
+        <img src="${card.image}" alt="${card.title}">
+        <img src="${card.image}" alt="${card.title}">
+        <p>${card.longerDescription}</p>
     `;
 }
 
