@@ -11,7 +11,7 @@ window.onload = function() {
     setTimeout(function() {
     loader.style.display = 'none'
     loader_bg.style.display = 'none'
-}, 4000)
+}, 2500)
 }
 // Функция для получения общего количества карточек
 async function fetchTotalCards() {
@@ -51,6 +51,10 @@ function displayCards(cards) {
             <p>${card.description}</p>
             <img src="${card.image}" alt="${card.title}">
         `;
+        cardElement.addEventListener('click', () => {
+            // Передаем информацию о карточке в URL
+            window.location.href = `page.html?id=${card.id}`;
+        });
         container.appendChild(cardElement);
     });
 }

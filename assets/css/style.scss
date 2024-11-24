@@ -126,7 +126,9 @@ body{
     &:first-child{
         margin-top: 100px;
         & img{
-            transform: translate(750px, -220px);
+            transform: translate(750px, -300px);
+            width: 250px;
+            height: 250px;
         }
     }
     background-color: rgba($color: white, $alpha: 0.4);
