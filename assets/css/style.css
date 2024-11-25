@@ -136,11 +136,6 @@ h1 {
 .card:first-child {
   margin-top: 80px;
 }
-.card:first-child img {
-  transform: translate(750px, -340px);
-  width: 250px;
-  height: 250px;
-}
 .card img {
   width: 250px;
   height: 250px;
@@ -151,6 +146,7 @@ h1 {
   font-size: 20px;
   width: 700px;
   margin-left: 25px;
+  height: 100px;
 }
 .card h1 {
   margin-left: 15px;

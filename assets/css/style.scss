@@ -133,11 +133,6 @@ h1{
 .card {
     &:first-child{
         margin-top: 80px;
-        & img{
-            transform: translate(750px, -340px);
-            width: 250px;
-            height: 250px;
-        }
     }
     background-color: rgba($color: white, $alpha: 0.4);
     font-family: city-text;
@@ -153,11 +148,13 @@ h1{
         height: 250px;
         transform: translate(750px, -285px);
         border-radius: 50%;
+        
     }
     & p{
         font-size: 20px;
         width: 700px;
         margin-left: 25px;
+        height: 100px;
     }
     & h1{
         margin-left: 15px;

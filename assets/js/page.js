@@ -10,7 +10,7 @@ window.onload = function() {
     setTimeout(function() {
     loader.style.display = 'none'
     loader_bg.style.display = 'none'
-}, 2500)
+}, 500)
 }
 
 // Функция для получения данных карточки по id
