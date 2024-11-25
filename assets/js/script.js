@@ -1,6 +1,6 @@
 // URL вашего MockAPI
 const apiUrl = 'https://6735cb285995834c8a941c33.mockapi.io/card';
-const cardsPerPage = 5; // Количество карточек на странице
+const cardsPerPage = 4; // Количество карточек на странице
 let currentPage = 1; // Текущая страница
 let totalCards = 0; // Общее количество карточек
 let allCards = []; // Массив для хранения всех карточек

@@ -113,7 +113,14 @@ h1{
     left: calc(48.7%);
 }
 
+.arrow{
+    width: 50px;
+    height: 50px;
+    transform: translate(50px, 100px);
+}
+
 .large-container{
+    margin-top: -50px;
     height: 1200px;
     overflow-y: auto;
     scrollbar-width: none;  
@@ -121,9 +128,9 @@ h1{
 
 .container{
     background-color: rgba($color: #f5ebe0, $alpha: 0.55);
-    margin:50px 135px 150px 150px;
+    margin:0px 135px 150px 150px;
     padding: 50px;
-    padding-top: 20px;
+    padding-top: 0px;
     border-radius: 25px;
     border: 3px solid rgba($color: rgb(186, 180, 180), $alpha: 0.7);
 
