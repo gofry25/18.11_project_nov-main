@@ -24,6 +24,14 @@ body h2 {
   letter-spacing: -3px;
 }
 
+p {
+  font-family: Onest;
+}
+
+h1 {
+  font-family: Onest;
+}
+
 .loader-bg {
   margin-top: -50px;
   padding: 0;

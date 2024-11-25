@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Rubik+Mono+One&display=swap");
 body {
   position: absolute;
   width: 100%;
@@ -12,6 +13,98 @@ body {
   overflow: hidden;
 }
 
+p {
+  font-family: Onest;
+  color: #2f3e46;
+  font-size: 35px;
+}
+
+h1 {
+  font-size: 55px;
+  font-family: Rubik Mono One;
+  color: transparent;
+  -webkit-text-stroke-color: rgb(255, 104, 104);
+  -webkit-text-stroke-width: 2.5px;
+  letter-spacing: 2px;
+}
+
+.loader-bg {
+  margin-top: -50px;
+  padding: 0;
+  position: absolute;
+  z-index: 90;
+  width: 100%;
+  height: 200%;
+  background-color: white;
+}
+
+.loader {
+  width: 2.5em;
+  height: 2.5em;
+  position: relative;
+  z-index: 99;
+  transform: rotate(165deg);
+}
+.loader::before, .loader::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 0.25em;
+  transform: translate(-50%, -50%);
+}
+
+.loader:before {
+  animation: before8 2s infinite;
+}
+
+.loader:after {
+  animation: after6 2s infinite;
+}
+
+@keyframes before8 {
+  0% {
+    width: 0.5em;
+    box-shadow: 1em -0.5em rgba(225, 20, 98, 0.75), -1em 0.5em rgba(111, 202, 220, 0.75);
+  }
+  35% {
+    width: 2.5em;
+    box-shadow: 0 -0.5em rgba(225, 20, 98, 0.75), 0 0.5em rgba(111, 202, 220, 0.75);
+  }
+  70% {
+    width: 0.5em;
+    box-shadow: -1em -0.5em rgba(225, 20, 98, 0.75), 1em 0.5em rgba(111, 202, 220, 0.75);
+  }
+  100% {
+    box-shadow: 1em -0.5em rgba(225, 20, 98, 0.75), -1em 0.5em rgba(111, 202, 220, 0.75);
+  }
+}
+@keyframes after6 {
+  0% {
+    height: 0.5em;
+    box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75), -0.5em -1em rgba(233, 169, 32, 0.75);
+  }
+  35% {
+    height: 2.5em;
+    box-shadow: 0.5em 0 rgba(61, 184, 143, 0.75), -0.5em 0 rgba(233, 169, 32, 0.75);
+  }
+  70% {
+    height: 0.5em;
+    box-shadow: 0.5em -1em rgba(61, 184, 143, 0.75), -0.5em 1em rgba(233, 169, 32, 0.75);
+  }
+  100% {
+    box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75), -0.5em -1em rgba(233, 169, 32, 0.75);
+  }
+}
+.loader {
+  position: absolute;
+  top: 45%;
+  left: 48.7%;
+}
+
 .large-container {
   height: 1200px;
   overflow-y: auto;
@@ -19,9 +112,10 @@ body {
 }
 
 .container {
-  background-color: rgba(255, 255, 255, 0.55);
+  background-color: rgba(245, 235, 224, 0.55);
   margin: 50px 135px 150px 150px;
-  padding: 60px;
+  padding: 50px;
+  padding-top: 20px;
   border-radius: 25px;
   border: 3px solid rgba(186, 180, 180, 0.7);
 }
@@ -30,19 +124,10 @@ body {
   height: 250px;
 }
 
-.card-details h1 {
-  font-size: 50px;
-  text-align: center;
-  margin-top: -10px;
-}
 .card-details img {
   margin-left: 35px;
   margin-top: 20px;
   margin-bottom: 20px;
-}
-.card-details p {
-  font-size: 35px;
-  font-weight: 400;
 }
 
 .map {
