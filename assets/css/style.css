@@ -123,6 +123,7 @@ h1 {
 }
 
 .card {
+  transition: all 0.4s ease;
   background-color: rgba(255, 255, 255, 0.4);
   font-family: city-text;
   margin-top: 150px;
@@ -132,6 +133,12 @@ h1 {
   height: 250px;
   display: block;
   border-radius: 20px;
+}
+.card:hover {
+  box-shadow: #ffffff 0px 0px 20px;
+}
+.card:hover h1 {
+  color: red;
 }
 .card:first-child {
   margin-top: 80px;

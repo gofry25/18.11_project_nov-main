@@ -131,6 +131,13 @@ h1{
 }
 
 .card {
+    transition: all 0.4s ease;
+    &:hover{
+        box-shadow: #ffffff 0px 0px 20px;
+        & h1{
+            color: red;
+        }
+    }
     &:first-child{
         margin-top: 80px;
     }

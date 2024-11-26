@@ -1,4 +1,3 @@
-// URL вашего MockAPI
 const apiUrl = 'https://6735cb285995834c8a941c33.mockapi.io/card';
 const cardsPerPage = 4; 
 let currentPage = 1; 
