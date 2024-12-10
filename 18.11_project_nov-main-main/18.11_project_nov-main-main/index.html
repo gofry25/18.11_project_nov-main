@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Путеводитель</title>
+</head>
+<body>
+
+    <div class="loader" id="loader"></div>
+    <div class="loader-bg" id="loader-bg"></div>
+    <a href="#"><img src="./assets/img/left-chevron.png" alt="arrow" class="arrow"></a>
+    <h2>ДОСТОПРИМЕЧАТЕЛЬНОСТИ<br> ГОРОДА</h2>
+
+    <label for="sort">Сортировка </label>
+
+    <select name="sort" id="sort" class="sort">
+        <option value="">По умолчанию</option>
+        <option value="popularity">Самые популярные</option>
+        <option value="nonpopularity">Самые непопулярные</option>
+        <option value="alphabet">По алфавиту(а-я)</option>
+        <option value="alphabetReverse">По алфавиту(я-а)</option>
+    </select>
+
+
+    <form action="search" class="form">
+        <input type="text" id="search" class="form__input" placeholder="поиск">
+    </form>
+    <div class="cards">
+    <div id="cards-container" class="cards-container"></div>
+    </div>
+
+    <div class="pagination" id="pagination"></div>
+
+    <script src="./assets/js/script.js"></script>    
+</body>
+</html>

@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Rubik+Mono+One&display=swap');
+
+body{
+    width: 1920px;
+    height: 1080px;
+    background-image: url(../img/bg.jpg);
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+    & h2{
+        margin-top: 25px;
+        height: 115px;
+        padding: 0;
+        text-align: center;
+        font-size: 70px;
+        font-family:Rubik Mono One;
+        color: transparent;
+        -webkit-text-stroke-color: white;
+        -webkit-text-stroke-width: 1px;
+        letter-spacing: -3px;
+    }
+    }
+.arrow{  
+    width: 50px;
+    height: 50px;
+    transform: translate(100px, 100px);
+    color: white;
+}
+
+p{
+    font-family: Onest;
+}
+h1{
+    font-family: Onest;
+}
+
+.loader-bg{ 
+    margin-top: -50px;                                                                                                                                                                                                                                                                                         
+    padding: 0;
+    position: absolute;
+    z-index: 90;
+    width: 100%;
+    height: 200%;
+    background-color: white;
+}
+
+.loader {
+    width: 2.5em;
+    height: 2.5em;
+    position: relative;
+    z-index: 99;
+    transform: rotate(165deg);
+
+    &::before, &::after{
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        width: 0.5em;
+        height: 0.5em;
+        border-radius: 0.25em;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.loader:before {
+    animation: before8 2s infinite;
+}
+
+.loader:after {
+    animation: after6 2s infinite;
+}
+
+@keyframes before8 {
+    0% {
+    width: 0.5em;
+    box-shadow: 1em -0.5em rgba(225, 20, 98, 0.75), -1em 0.5em rgba(111, 202, 220, 0.75);
+    }
+
+    35% {
+    width: 2.5em;
+    box-shadow: 0 -0.5em rgba(225, 20, 98, 0.75), 0 0.5em rgba(111, 202, 220, 0.75);
+    }
+
+    70% {
+    width: 0.5em;
+    box-shadow: -1em -0.5em rgba(225, 20, 98, 0.75), 1em 0.5em rgba(111, 202, 220, 0.75);
+    }
+
+    100% {
+    box-shadow: 1em -0.5em rgba(225, 20, 98, 0.75), -1em 0.5em rgba(111, 202, 220, 0.75);
+    }
+}
+
+@keyframes after6 {
+    0% {
+    height: 0.5em;
+    box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75), -0.5em -1em rgba(233, 169, 32, 0.75);
+    }
+
+    35% {
+    height: 2.5em;
+    box-shadow: 0.5em 0 rgba(61, 184, 143, 0.75), -0.5em 0 rgba(233, 169, 32, 0.75);
+    }
+
+    70% {
+    height: 0.5em;
+    box-shadow: 0.5em -1em rgba(61, 184, 143, 0.75), -0.5em 1em rgba(233, 169, 32, 0.75);
+    }
+
+    100% {
+    box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75), -0.5em -1em rgba(233, 169, 32, 0.75);
+    }
+}
+
+.loader {
+    position: absolute;
+    top: calc(45%);
+    left: calc(48.7%);
+}
+
+.cards{
+    
+    height: 650px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    transition: all 0.4s ease;
+    &:hover{
+        box-shadow: #ffffff 0px 0px 20px;
+        & h1{
+            color: red;
+        }
+    }
+    &:first-child{
+        margin-top: 80px;
+    }
+    background-color: rgba($color: white, $alpha: 0.4);
+    font-family: city-text;
+    margin-top: 150px;
+    border: 3px solid rgba($color: rgb(186, 180, 180), $alpha: 0.7);
+    
+    width: 900px;
+    height: 250px;
+    display: block;
+    border-radius: 20px;
+    & img{
+        width: 250px;
+        height: 250px;
+        transform: translate(750px, -285px);
+        border-radius: 50%;
+        
+    }
+    & p{
+        font-size: 20px;
+        width: 700px;
+        margin-left: 25px;
+        height: 100px;
+    }
+    & h1{
+        margin-left: 15px;
+    }
+}
+
+
+.pagination{
+    margin-bottom: 100px;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    & p{
+        -webkit-text-stroke-color: rgb(0, 0, 0);
+        -webkit-text-stroke-width: 1px;
+        font-family: Onest;
+        color: white;
+        font-size: 45px;
+    }
+    & button{
+        font-size: 60px;
+        width: 100px;
+        height: 50px;
+        background-color: transparent;
+        border: none;
+        color: white;
+        transform: translateY(-15px);
+    }
+
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    &__input{
+        width: 300px;
+        position: absolute;
+        transform: translate(750px, 50px);
+        background-color: rgba($color: #ffffff, $alpha: 0.4);
+        border: none;
+        border-radius: 30px;
+        font-size: 30px;
+        padding-left: 25px;
+        color: #000000;
+        font-weight: 100;
+    }
+}
+
+label{
+    font-size: 35px;
+    font-family: Onest;
+    position: absolute;
+    transform: translate(100px, 65px);
+    color: white;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    -webkit-text-stroke-width: 0.7px
+}
+
+.sort{
+    width: 300px;
+    position: absolute;
+    transform: translate(100px, 125px);
+    background-color: rgba($color: #ffffff, $alpha: 0.4);
+    border: none;
+    border-radius: 30px;
+    font-size: 26px;
+    padding-left: 5px;
+    color: #000000;
+    font-weight: 100;
+    & select{
+        font-size: 10px;
+    }
+}
