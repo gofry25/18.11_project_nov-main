@@ -7,18 +7,46 @@
     <title>Card Details</title>
 </head>
 <body>
-
     <div class="loader" id="loader"></div>
     <div class="loader-bg" id="loader-bg"></div>
 
+    <div class="modal_container">
+        <div class="modal_content">
+
+        </div>
+    </div>
+
+    
     <a href="./index.html"><img src="./assets/img/left-chevron.png" alt="arrow" class="arrow"></a>
     <div class="large-container">
     <div class="container">
-    <div id="card-details" class="card-details"></div>
+    <div id="card-details" class="card-details">
+        <div class="card__upper" id="upper">
+            <div class="imgs"></div>
+        </div>
+        <h2>Поделитесь своим мнением! </h2>
+            <div class = 'comms'>
+                <div class="leave__comm">
+                    
+                    <form class="comm" id="comm">
+                        <p class="comm__name">Ваше имя</p>
+                        <input type="text" id="name" placeholder="Введите ваше имя">
+                        <p class="comm__email">Ваша эл. почта</p>
+                        <input type="email" id="mail" placeholder="Введите вашу почту">
+                        <p class="comm__text">Ваш комментарий</p>
+                        <input type="text" id="content" placeholder="Расскажите, что вы думаете">
+                        <br><button type='button' class='comm__btn' id="sub">Отправить</button>
+                    </form>
+                </div>
+                <div class='comms__container'>
+
+                </div>
+            </div>
+    </div>
     </div>
     </div>
     
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
     <script src="./assets/js/page.js"></script>
 </body>
 </html>

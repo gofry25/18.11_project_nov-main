@@ -26,6 +26,19 @@ h1{
     -webkit-text-stroke-width: 2.5px;
     letter-spacing: 2px;
 }
+h2{
+    font-size: 55px;
+    text-align: center;
+    font-family: Onest;
+    color: rgb(255, 104, 104);
+    -webkit-text-stroke-color: rgb(131, 49, 49);
+    -webkit-text-stroke-width: 0.6px;
+}
+
+button{
+    width: 150px;
+    height: 50px;
+}
 
 .loader-bg{ 
     margin-top: -50px;                                                                                                                                                                                                                                                                                         
@@ -120,6 +133,9 @@ h1{
 }
 
 .large-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: -50px;
     height: 1200px;
     overflow-y: auto;
@@ -127,6 +143,7 @@ h1{
 }
 
 .container{
+    width: 65%;
     background-color: rgba($color: #f5ebe0, $alpha: 0.55);
     margin:0px 135px 150px 150px;
     padding: 50px;
@@ -135,8 +152,8 @@ h1{
     border: 3px solid rgba($color: rgb(186, 180, 180), $alpha: 0.7);
 
     & img{
-        width: 450px;
-        height: 250px;
+        width: 350px;
+        height: 200px;
 
     }
 }
@@ -147,9 +164,84 @@ h1{
         margin-top: 20px;
         margin-bottom: 20px;
     }
+    
 }
 
 .map{
     display: flex;
     justify-content: center;
 }
+
+.leave__comm{
+    width: 300px;
+    & p{
+        font-size: 28px;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    & input{
+        width: 200px;
+        height: 30px;
+        border: none;
+        border-radius: 15PX;
+        margin-bottom: 15px;
+        outline: none;
+    }
+}
+
+.comms{
+    display: flex;
+    height: auto;
+}
+
+.comms__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    width: 800px;
+    height: auto;
+    gap: 25px;
+}
+
+.comm__el{
+    width: 600px;
+    height: auto;
+    background-color: rgba($color: #cacaca, $alpha: 0.55);
+    border: 3px solid rgba($color: rgb(186, 180, 180), $alpha: 0.7);
+    border-radius: 25px;
+    & p {
+        margin-left: 15px;
+        margin-top: 5px;
+        font-family: Onest;
+        color: #2f3e46;
+    }
+    & h3{
+        margin-left: 15px;
+        font-size: 30px;
+        margin-top: 5px;
+        margin-bottom: 0;
+        font-family: Onest;
+        font-weight: 400;
+    }
+}
+
+.comm__btn{
+    border:none;
+    border-radius: 25px;
+    height: 50px;
+    font-size: 20px;
+    font-family: Onest;
+}
+
+.delBtn{
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border: none;
+    background-color: rgb(228, 73, 73);
+    font-size: 20px;
+    font-family: Onest;
+    color: white;
+}
+

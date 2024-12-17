@@ -120,6 +120,8 @@ h1 {
   height: 650px;
   overflow-y: scroll;
   scrollbar-width: none;
+  display: flex;
+  justify-content: center;
 }
 
 .card {
@@ -128,7 +130,6 @@ h1 {
   font-family: city-text;
   margin-top: 150px;
   border: 3px solid rgba(186, 180, 180, 0.7);
-  margin-left: 450px;
   width: 900px;
   height: 250px;
   display: block;
@@ -191,7 +192,7 @@ h1 {
 .form__input {
   width: 300px;
   position: absolute;
-  transform: translate(700px, 50px);
+  transform: translate(750px, 50px);
   background-color: rgba(255, 255, 255, 0.4);
   border: none;
   border-radius: 30px;
@@ -199,4 +200,63 @@ h1 {
   padding-left: 25px;
   color: #000000;
   font-weight: 100;
+  outline: none;
+}
+
+.sortLabel {
+  font-size: 35px;
+  font-family: Onest;
+  position: absolute;
+  transform: translate(100px, 65px);
+  color: white;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+  -webkit-text-stroke-width: 0.7px;
+}
+
+.sort {
+  width: 335px;
+  position: absolute;
+  transform: translate(100px, 125px);
+  background-color: rgba(255, 255, 255, 0.4);
+  border: none;
+  border-radius: 30px;
+  font-size: 26px;
+  padding-left: 5px;
+  color: #000000;
+  font-weight: 100;
+}
+.sort select {
+  font-size: 10px;
+}
+.sort option {
+  font-size: 12px;
+}
+
+.filterLabel {
+  font-size: 35px;
+  font-family: Onest;
+  position: absolute;
+  transform: translate(100px, 165px);
+  color: white;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+  -webkit-text-stroke-width: 0.7px;
+}
+
+.filter {
+  width: 335px;
+  position: absolute;
+  transform: translate(100px, 225px);
+  background-color: rgba(255, 255, 255, 0.4);
+  border: none;
+  border-radius: 30px;
+  font-size: 26px;
+  padding-left: 5px;
+  color: #000000;
+  font-weight: 100;
+}
+.filter select {
+  font-size: 10px;
+}
+.filter option {
+  font-size: 12px;
 }/*# sourceMappingURL=style.css.map */

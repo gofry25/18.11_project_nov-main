@@ -12,6 +12,30 @@
     <div class="loader-bg" id="loader-bg"></div>
     <a href="#"><img src="./assets/img/left-chevron.png" alt="arrow" class="arrow"></a>
     <h2>ДОСТОПРИМЕЧАТЕЛЬНОСТИ<br> ГОРОДА</h2>
+
+    <label class="sortLabel" for="sort"  >Сортировка </label>
+
+    <select name="sort" id="sort" class="sort">
+        <option value="">По умолчанию</option>
+        <option value="popularity">Самые популярные</option>
+        <option value="nonpopularity">Самые непопулярные</option>
+        <option value="alphabet">По алфавиту(а-я)</option>
+        <option value="alphabetReverse">По алфавиту(я-а)</option>
+    </select>
+
+    <label class="filterLabel" for="filter" >Фильтр </label>
+
+    <select name="filter" id="filter" class="filter">
+        <option value="">Без фильтра</option>
+        <option value="culture">Культурные достояния</option>
+        <option value="sports">Спортивные центры</option>
+        <option value="parks">Парки</option>
+        <option value="monuments">Памятники</option>
+        <option value="entertainment">Развлекательные центры</option>
+        <option value="business">Бизнес-центры</option>
+    </select>
+
+
     <form action="search" class="form">
         <input type="text" id="search" class="form__input" placeholder="поиск">
     </form>
